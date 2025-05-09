@@ -1,4 +1,4 @@
-# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+F# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 """Model validation metrics."""
 
 import math
@@ -426,7 +426,7 @@ class ConfusionMatrix:
             'axes.labelsize': 20,      # x, y축 레이블 크기
             'xtick.labelsize': 20,     # x축 눈금 라벨 크기
             'ytick.labelsize': 20,     # y축 눈금 라벨 크기
-            'legend.fontsize': 15,     # 범례 폰트 크기
+            'legend.fontsize': 18,     # 범례 폰트 크기
             'figure.titlesize': 20     # Figure 전체 제목 크기
         })
 
