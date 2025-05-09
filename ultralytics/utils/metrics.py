@@ -420,6 +420,16 @@ class ConfusionMatrix:
         import matplotlib.pyplot as plt  # scope for faster 'import ultralytics'
         import seaborn
 
+        plt.rcParams.update({
+            'font.size': 20,           # 전체 기본 폰트 크기
+            'axes.titlesize': 20,      # 축 제목 타이틀 크기
+            'axes.labelsize': 20,      # x, y축 레이블 크기
+            'xtick.labelsize': 20,     # x축 눈금 라벨 크기
+            'ytick.labelsize': 20,     # y축 눈금 라벨 크기
+            'legend.fontsize': 15,     # 범례 폰트 크기
+            'figure.titlesize': 20     # Figure 전체 제목 크기
+        })
+
         array = self.matrix / ((self.matrix.sum(0).reshape(1, -1) + 1e-9) if normalize else 1)  # normalize columns
         array[array < 0.005] = np.nan  # don't annotate (would appear as 0.00)
 
