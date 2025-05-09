@@ -444,7 +444,7 @@ class ConfusionMatrix:
                 array,
                 ax=ax,
                 annot=nc < 30,
-                annot_kws={"size": 8},
+                annot_kws={"size": 15},
                 cmap="Blues",
                 fmt=".2f" if normalize else ".0f",
                 square=True,
